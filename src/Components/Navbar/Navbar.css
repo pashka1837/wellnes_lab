@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   top: 0;
   left: 0;
   right: 0;
@@ -8,15 +8,32 @@
   display: grid;
   place-items: center;
   height: var(--navbar-height);
+  background-color: #023047;
 }
 
-.navbar .container_blur {
+.nav_inner {
   width: 90%;
   padding: 0 5%;
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 20px;
+} */
+
+.navbar {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  z-index: 2;
+
+  padding: 0 5%;
+  height: var(--navbar-height);
+  background-color: #023047;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .navbar .menuItems {
@@ -36,26 +53,21 @@
 
 .logos p {
   display: none;
-  color: #b950ae;
-  font-family: "Jersey 10", sans-serif;
+  color: #ffb703;
   font-size: 3rem;
+  font-weight: 700;
 }
 
 .burger {
   cursor: pointer;
-  color: #b950ae;
+  color: #ffb703;
   width: 50px;
   background: none;
   border: none;
 }
 
 @media screen and (min-width: 768px) {
-  body {
-    --navbar-height: 130px;
-  }
-
-  .navbar .container_blur {
-    /* margin: 3% 5%; */
+  .navbar {
     padding: 1% 3%;
   }
 

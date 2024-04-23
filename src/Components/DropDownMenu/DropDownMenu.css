@@ -21,6 +21,10 @@
   transform: translateY(0);
 }
 
+.mobile_menu.open .burger {
+  color: #023047;
+}
+
 @media screen and (min-width: 768px) {
   .mobile_menu {
     display: none;

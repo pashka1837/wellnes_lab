@@ -1,11 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Jersey+10&family=Jersey+25&display=swap");
-
-.jersey-25-regular {
-  font-family: "Jersey 25", sans-serif;
-}
-
-.jersey-10-regular {
-  font-family: "Jersey 10", sans-serif;
+.changa {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
 }
 
 * {
@@ -15,7 +12,7 @@
 }
 
 :root {
-  font-family: "Jersey 10", sans-serif;
+  font-family: "Changa", sans-serif;
   line-height: 1.5;
   font-weight: 400;
   backdrop-filter: blur(40px);
@@ -26,10 +23,12 @@ html {
 }
 
 body {
-  --navbar-height: 110px;
+  --navbar-height: 90px;
   --footer-height: 80px;
   transition: height 0.2s linear;
-  background-color: #000000;
+  background-color: #ffb703;
+  /* background-color: #8ecae6; */
+  /* color: #8ecae6; */
 }
 
 body:has(.mobile_menu.open) {
@@ -54,14 +53,11 @@ body:has(.mobile_menu.open) {
   }
 
   body {
-    --navbar-height: 130px;
+    --navbar-height: 100px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  body {
-    --navbar-height: 150px;
-  }
 }
 
 button:focus {

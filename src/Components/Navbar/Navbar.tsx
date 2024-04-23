@@ -1,5 +1,5 @@
 import './Navbar.css';
-import logo from '../../assets/logo.svg';
+import logo from '../../assets/logo.webp';
 import useStore from '../../feature/store';
 import Burger from '../Buttons/Burger';
 import MenuItems from '../MenuItems/MenuItems';
@@ -23,16 +23,15 @@ export default function Navbar() {
 	const {isMenuOpen, setOpen} = useStore();
 	return (
 		<div className='navbar'>
-			<div className='container_blur'>
-				<div className='logos' role='button' onClick={() => {
-					location.href = '#header';
-				}}>
-					<img src={logo} alt='logo' />
-					<p>ASTRO FINDERS</p>
-				</div>
-				<MenuItems />
-				<Burger isMenuOpen={isMenuOpen} setOpen={setOpen}>{openBurger}</Burger>
+			<Burger isMenuOpen={isMenuOpen} setOpen={setOpen}>{openBurger}</Burger>
+			<MenuItems />
+			<div className='logos' role='button' onClick={() => {
+				location.href = '#header';
+			}}>
+				<img src={logo} alt='logo' />
+				<p>DIGITAL PAWS</p>
 			</div>
+
 		</div>
 	);
 }
