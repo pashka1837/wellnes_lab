@@ -1,22 +1,22 @@
-import "./Feautures.css";
+import './Feautures.css';
 
-import Card from "../Card/Card";
-import pets from "../pets";
+import Card from '../Card/Card';
+import pets from '../pets';
 
 export default function Feautures() {
-  return (
-    <div id="artifacts" className="features container_gr">
-      <div className="subheadline">
-        <h3>
+	return (
+		<div id='collection' className='features container_gr'>
+			<div className='subheadline'>
+				<h3>
           Explore a diverse marketplace of virtual pet NFTs with unique traits,
           characteristics, and personalities!
-        </h3>
-      </div>
-      <div className="cards_container">
-        {pets.map((pet) => (
-          <Card key={pet.info.desc} {...pet} />
-        ))}
-      </div>
-    </div>
-  );
+				</h3>
+			</div>
+			<div className='cards_container'>
+				{pets.map(pet => (
+					<Card key={pet.info.desc} {...pet} />
+				))}
+			</div>
+		</div>
+	);
 }

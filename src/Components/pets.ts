@@ -6,16 +6,6 @@ import prpl_sweat_cat from '../assets/images/pets/prpl_sweat_cat.webp';
 import bl_hood_cat from '../assets/images/pets//bl_hood_cat.webp';
 import blck_jack_dog from '../assets/images/pets/blck_jack_dog.webp';
 
-// Import blue_tie_dog from '../assets/images/pets/blue_tie_dog.webp';
-// import gld_chain_cat from '../assets/images/pets/gld_chain_cat.webp';
-// import bacwit_dog from '../assets/images/pets/bacwit_dog.webp';
-// import bck_pack_dog from '../assets/images/pets/bck_pack_dog.webp';
-// import haski_dog from '../assets/images/pets/haski_dog.webp';
-// import hat_cat from '../assets/images/pets/hat_cat.webp';
-// import headphons_dog from '../assets/images/pets/headphons_dog.webp';
-// import orng_cat from '../assets/images/pets/orng_cat.webp';
-// import pnk_hoodie_dog from '../assets/images/pets/pnk_hoodie_dog.webp';
-
 export type PetInfo = {
 	name: string;
 	dogAge: string;

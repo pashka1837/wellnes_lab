@@ -1,24 +1,21 @@
 import './Engagement.css';
-import Accordion from '../Accordion/Accordion';
-
-const accordionData = [
-	'Establish trade routes between planets, participate in the in-game economy, and earn rewards by contributing to the galactic marketplace.',
-	'Become part of the Galactic Council, where players govern the game\'s updates, events, and economic policies through decentralized governance.',
-	'Discover hidden lore fragments on planets, collect them to unlock backstory and mysteries, and shape the future of the cosmos.',
-];
+import famIMG from '../../assets/images/fam.webp';
+import {telegaSVG, twitterSVG} from '../SVG/svg';
+import {telegaLink, twitterLink} from '../../links';
 
 export default function Engagement() {
 	return (
-		<div id='engagement' className='engagement container_gr'>
-			<div className='subheadline container_blur'>
-				<h3>Ready to embark on your cosmic journey?</h3>
-			</div>
-			<Accordion data={accordionData} />
+		<div id='signup' className='engagement container_gr'>
 			<div className='subheadline'>
 				<h3>
-        Sign up for early access to <span>DIGITAL PAWS</span> and join our community of pet enthusiasts and collectors today!
+        Follow our socials to find more about early access to <span>DIGITAL PAWS</span> and all other updates!
 				</h3>
+				<div className='socials'>
+					<a className='social_link' href={twitterLink}>{twitterSVG}</a>
+					<a className='social_link' href={telegaLink}>{telegaSVG}</a>
+				</div>
 			</div>
+			<img src={famIMG} alt='pet family image' />
 		</div>
 	);
 }

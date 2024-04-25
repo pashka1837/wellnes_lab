@@ -1,24 +1,33 @@
 .footer {
   height: var(--footer-height);
+  background-color: #023047;
+  color: #ffb703;
   font-size: 1.1rem;
-}
-
-.footer .inner {
-  height: 100%;
-  width: 100%;
   backdrop-filter: blur(40px);
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
 }
 
-.inner img {
+.logo_footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.logo_footer img {
   width: 50px;
+}
+
+.logo_footer p {
+  font-weight: 700;
 }
 
 @media screen and (min-width: 768px) {
   .footer {
     font-size: 1.3rem;
+    flex-direction: row;
+    gap: 20px;
   }
 }
