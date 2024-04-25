@@ -1,22 +1,30 @@
-import {useEffect, useState} from 'react';
-import './Card.css';
+import "./Card.css";
+import { PetObj } from "../pets";
 
-type CardProps = {
-	desc: string;
-	img: string[];
-};
+type CardProps = PetObj;
 
-export default function Card({desc, img}: CardProps) {
-	const [curImg, setImg] = useState(0);
-	useEffect(() => {
-		setTimeout(() => {
-			setImg(curImg >= img.length - 1 ? 0 : curImg + 1);
-		}, 1400 * (10 / img.length));
-	}, [curImg]);
-	return (
-		<div className='container_blur card'>
-			<h3>{desc}</h3>
-			<img src={img[curImg]} alt='artifact image' />
-		</div>
-	);
+export default function Card({ imgSrc, info }: CardProps) {
+  const { name, dogAge, humAge, desc } = info;
+
+  return (
+    <div className="card">
+      <div className="pet_img_container">
+        <img src={imgSrc} alt="pet image" />
+      </div>
+      <div className="pet_desc_container">
+        <h3>
+          <span>Name:</span> {name}
+        </h3>
+        <h3>
+          <span>Pet Age:</span> {dogAge}
+        </h3>
+        <h3>
+          <span>Human Age:</span> {humAge}
+        </h3>
+        <h3>
+          <span>Description:</span> {desc}
+        </h3>
+      </div>
+    </div>
+  );
 }

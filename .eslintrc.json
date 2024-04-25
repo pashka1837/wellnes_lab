@@ -27,7 +27,11 @@
         "react"
     ],
     "rules": {
+        "@typescript-eslint/naming-convention": ["off"],
         "no-mixed-spaces-and-tabs":"off",
-        "naming-convention": 0
+        "no-negated-condition":"off",
+        "no-mixed-operators": "off",
+        "naming-convention": "off"
+        
     }
 }

@@ -1,16 +1,18 @@
 .features {
-  min-height: 100lvh;
+  min-height: 100dvh;
   padding: var(--navbar-height) 7%;
   justify-items: center !important;
   align-items: start !important;
-  font-family: "Jersey 25", sans-serif;
+  background-color: #8ecae6;
 }
 
 .subheadline {
-  line-height: 40px;
-  font-size: 2.1rem;
+  line-height: 35px;
+  font-size: 1.8rem;
   text-align: center;
   padding: 3% 4%;
+  color: #0a3347;
+  /* color: #ffb703; */
 }
 
 .cards_container {
@@ -19,23 +21,24 @@
   display: grid;
   justify-content: space-evenly;
   gap: 50px;
-  grid-template-columns: minmax(300px, 450px);
+  grid-template-columns: minmax(250px, 350px);
 }
 
 @media screen and (min-width: 768px) {
   .subheadline {
     line-height: 40px;
-    font-size: 2.5rem;
+    font-size: 2.1rem;
   }
 
   .cards_container {
-    grid-template-columns: repeat(auto-fit, 500px);
+    grid-template-columns: repeat(auto-fit, minmax(350px, 450px));
     gap: 80px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .subheadline {
-    font-size: 2.9rem;
+    font-size: 2.5rem;
+    line-height: 45px;
   }
 }
