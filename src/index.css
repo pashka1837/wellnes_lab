@@ -27,8 +27,6 @@ body {
   --footer-height: 80px;
   transition: height 0.2s linear;
   background-color: #ffb703;
-  /* background-color: #8ecae6; */
-  /* color: #8ecae6; */
 }
 
 body:has(.mobile_menu.open) {
