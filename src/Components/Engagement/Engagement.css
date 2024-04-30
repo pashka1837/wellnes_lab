@@ -1,7 +1,6 @@
 .engagement {
   min-height: 100dvh;
   padding: var(--navbar-height) 7%;
-  /* gap: 50px; */
 }
 
 .engagement img {
@@ -24,9 +23,9 @@
   text-decoration: none;
   color: #023047;
 }
-.social_link svg {
+.social_link img {
   width: 40px;
-  vertical-align: middle;
+  /* vertical-align: middle; */
 }
 
 @media screen and (min-width: 768px) {
@@ -42,6 +41,10 @@
   }
   .engagement img {
     width: auto;
+  }
+
+  .social_link img {
+    width: 50px;
   }
 }
 

@@ -7,7 +7,7 @@ export default function Header() {
 			className='header container_gr'>
 			<div className='headline'>
 				<div className='text'>
-					<h1 className='name'>DIGITAL PAWS</h1>
+					<h1 className='name'>COIN PAWS</h1>
 					<h2 className='desc'>your gateway to the world of virtual pet NFTs</h2>
 				</div>
 				<img src={coinIMG} alt='coin image' />

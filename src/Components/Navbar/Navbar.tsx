@@ -29,7 +29,7 @@ export default function Navbar() {
 				location.href = '#header';
 			}}>
 				<img src={logo} alt='logo' />
-				<p>DIGITAL PAWS</p>
+				<p>COIN PAWS</p>
 			</div>
 
 		</div>
