@@ -1,2 +1,3 @@
-export const twitterLink = 'https://twitter.com/coin_paws';
-export const instaLink = 'https://www.instagram.com/biana_na37/';
+
+export const twitterLink = process.env.REACT_APP_TWIT_URL! as string;
+export const instaLink = process.env.REACT_APP_INSTA_URL! as string;
