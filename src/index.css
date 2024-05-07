@@ -1,4 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+.changa {
+  font-family: "Changa", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
 
 * {
   margin: 0;
@@ -7,9 +12,10 @@
 }
 
 :root {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Changa", sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  backdrop-filter: blur(40px);
 }
 
 html {
@@ -20,10 +26,7 @@ body {
   --navbar-height: 90px;
   --footer-height: 80px;
   transition: height 0.2s linear;
-  /* background-color: #3a0ca3; */
-  height: 100vh;
-  /* color: #4cc9f0; */
-  color: #3a0ca3;
+  background-color: #ffb703;
 }
 
 body:has(.mobile_menu.open) {
@@ -32,9 +35,8 @@ body:has(.mobile_menu.open) {
 
 .container_gr {
   display: grid;
-  /* height: 100dvh; */
-  transition: height 0.2s linear;
-  padding: calc(var(--navbar-height) + 15px) 15% 5%;
+  place-items: center;
+  color: #f3f8ff;
 }
 
 .container_blur {
@@ -51,16 +53,9 @@ body:has(.mobile_menu.open) {
   body {
     --navbar-height: 100px;
   }
-
-  .container_gr {
-    padding: calc(var(--navbar-height) + 15px) 10% 0;
-  }
 }
 
 @media screen and (min-width: 1200px) {
-  .container_gr {
-    padding: 5% 10% 0;
-  }
 }
 
 button:focus {

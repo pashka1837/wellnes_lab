@@ -1,20 +1,30 @@
-import styles from './Card.module.css';
-import {type CardData} from '../../constants/feature_page_data';
-import useMediaQuery from '../../hooks/mediaQuery';
+import './Card.css';
+import {type PetObj} from '../pets';
 
-type CardProps = {
-	isFlexReverse: boolean;
-} & CardData;
+type CardProps = PetObj;
 
-export default function Card({imgSrc, desc, isFlexReverse}: CardProps) {
-	const {isTablet} = useMediaQuery();
+export default function Card({imgSrc, info}: CardProps) {
+	const {name, dogAge, humAge, desc, petType} = info;
+
 	return (
-		<div className={styles.card}
-			style={{flexDirection: isTablet ? (isFlexReverse ? 'row-reverse' : 'row') : 'column'}}>
-			<img className={styles.card_img} src={imgSrc} alt='card image' />
-			<p className={styles.card_desc}>
-				{desc}
-			</p>
+		<div className='card'>
+			<div className='pet_img_container'>
+				<img src={imgSrc} alt='pet image' />
+			</div>
+			<div className='pet_desc_container'>
+				<h3>
+					<span>Name:</span> {name}
+				</h3>
+				<h3>
+					<span>{petType} Age:</span> {dogAge}
+				</h3>
+				<h3>
+					<span>Human Age:</span> {humAge}
+				</h3>
+				<h3>
+					<span>Description:</span> {desc}
+				</h3>
+			</div>
 		</div>
 	);
 }

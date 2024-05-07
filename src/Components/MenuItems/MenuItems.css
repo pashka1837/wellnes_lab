@@ -7,22 +7,28 @@
 
 .menuLink {
   text-decoration: none;
-  color: #b5179e;
+  font-size: 3.3rem;
+  color: #023047;
 }
 
-.current {
-  text-decoration: underline;
+.menuLink svg {
+  width: 60px;
+  vertical-align: middle;
+  color: #023047;
 }
-
-/* .menuLink:hover {
-  text-decoration: underline;
-} */
 
 @media screen and (min-width: 768px) {
   .menuItems {
     height: auto;
     display: flex;
     gap: 50px;
-    align-items: baseline;
+  }
+  .menuLink {
+    font-size: 2.3rem;
+    color: #ffb703;
+  }
+  .menuLink svg {
+    width: 40px;
+    color: #ffb703;
   }
 }
