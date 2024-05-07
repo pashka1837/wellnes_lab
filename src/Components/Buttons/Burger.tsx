@@ -1,18 +1,17 @@
-type BurgerProps = {
-	isMenuOpen: boolean;
-	setOpen: (setVal: boolean) => void;
-	children: JSX.Element;
-};
+import useStore from '../../feature/store';
+import {closeBurger, openBurger} from '../../svgs/svgs';
+import styles from './Burger.module.css';
 
-export default function Burger({isMenuOpen, setOpen, children}: BurgerProps) {
+export default function Burger() {
+	const {isMenuOpen, setOpen} = useStore();
 	return (
 		<button
-			className='burger'
+			className={`${styles.burger_btn} ${isMenuOpen ? styles.open : styles.close}`}
 			type='button'
 			onClick={() => {
 				setOpen(!isMenuOpen);
 			}}
-		>{children}
+		>{isMenuOpen ? closeBurger : openBurger}
 		</button>
 	);
 }

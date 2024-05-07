@@ -1,15 +1,24 @@
+import {
+	Link, useLocation,
+} from 'react-router-dom';
 import useStore from '../../feature/store';
+import {type MyLink} from './MenuItems';
+import styles from './MenuItems.module.css';
 
-type ItemProps = {
-	href: string;
-	desc: string | JSX.Element;
-};
-
-export default function Item({href, desc}: ItemProps) {
+export default function Item({href, desc, svg}: MyLink) {
 	const {setOpen} = useStore();
+	const location = useLocation();
+	const isCurrent = location.pathname === href;
+
 	return (
-		<a className='menuLink' onClick={() => {
-			setOpen(false);
-		}} href={href}>{desc}</a>
+		<Link
+			className={`${styles.menuLink} ${isCurrent ? styles.current : ''}`}
+			onClick={() => {
+				setOpen(false);
+			}}
+			to={href}>
+			<span>{desc}</span>
+			<span>{svg}</span>
+		</Link>
 	);
 }

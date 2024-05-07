@@ -1,0 +1,36 @@
+.features {
+  justify-items: center;
+  align-items: start;
+}
+
+.text {
+  color: white;
+  display: grid;
+  gap: 20px;
+  line-height: 35px;
+  font-size: clamp(1.3rem, 3vw, 2.4rem);
+}
+
+.cards_container {
+  display: grid;
+  gap: 50px;
+}
+
+@media screen and (min-width: 768px) {
+  .text {
+    line-height: 45px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    padding: calc(var(--navbar-height) + 100px) 10% 5% !important;
+  }
+  .text {
+    line-height: 55px;
+  }
+
+  .cards_container {
+    gap: 70px;
+  }
+}

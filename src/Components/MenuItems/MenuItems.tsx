@@ -1,26 +1,38 @@
+import styles from './MenuItems.module.css';
+import {twitterLogo} from '../../svgs/svgs';
 import Item from './Item';
-import './MenuItems.css';
-type Link = {
+
+export type MyLink = {
 	href: string;
-	desc: string | JSX.Element;
+	desc: string;
+	svg?: JSX.Element;
 };
 
-const links: Link[] = [
+const links: MyLink[] = [
 	{
-		href: '#collection',
-		desc: 'Collection',
+		href: '/',
+		desc: 'Home',
 	},
 	{
-		href: '#signup',
+		href: '/features',
+		desc: 'Features',
+	},
+	{
+		href: '/signup',
 		desc: 'Sign up',
+	},
+	{
+		href: 'https://twitter.com',
+		desc: 'Twitter',
+		svg: twitterLogo,
 	},
 
 ];
 
 export default function MenuItems() {
 	return (
-		<div className='menuItems'>
-			{links.map(link => <Item key={link.href} {...link} />)}
+		<div className={styles.menuItems}>
+			{links.map(link => <Item key={link.href} {...link}/>)}
 		</div>
 	);
 }
