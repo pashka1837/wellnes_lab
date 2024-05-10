@@ -1,5 +1,5 @@
 .signup {
-  min-height: 100dvh;
+  height: 100dvh;
   padding: var(--navbar-height) 7%;
   place-items: center;
 }

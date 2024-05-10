@@ -9,8 +9,8 @@ const router = createBrowserRouter([
 	  path: '/',
 	  element: <Landing />,
 	  children: [
-			 {
-		     index: true,
+			{
+		       index: true,
 		       element: <Hero />,
 			},
 			{
