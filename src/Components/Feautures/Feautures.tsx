@@ -1,5 +1,4 @@
 import styles from './Feautures.module.css';
-
 import Card from '../Card/Card';
 import data from '../../constants/feature_page_data';
 
