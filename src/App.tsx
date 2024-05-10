@@ -4,30 +4,8 @@ import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import Landing from './Pages/Landing';
 import Signup from './Components/Signup/Signup';
 
-const router = createBrowserRouter([
-	{
-		element: <Landing />,
-		children: [
-			{
-				path: '/',
-				element: <Hero />,
-			},
-			{
-				path: 'features',
-				element: <Feautures />,
-			},
-			{
-				path: 'signup',
-				element: <Signup />,
-			},
-	  ],
-	},
-]);
-
 function App() {
-	return (
-		<RouterProvider router={router} />
-	);
+	return <></>;
 }
 
 export default App;
