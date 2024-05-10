@@ -6,12 +6,11 @@ import Signup from './Components/Signup/Signup';
 
 const router = createBrowserRouter([
 	{
-	  path: '/',
-	  element: <Landing />,
-	  children: [
+		element: <Landing />,
+		children: [
 			{
-		       index: true,
-		       element: <Hero />,
+				path: '/',
+				element: <Hero />,
 			},
 			{
 				path: 'features',
