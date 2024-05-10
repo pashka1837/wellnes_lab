@@ -1,12 +1,9 @@
 import './App.css';
 import Hero from './Components/Hero/Hero';
-import DropDownMenu from './Components/DropDownMenu/DropDownMenu';
-import Navbar from './Components/Navbar/Navbar';
 import Feautures from './Components/Feautures/Feautures';
-import Engagement from './Components/Engagement/Engagement';
-import Footer from './Components/Footer/Footer';
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
 import Landing from './Pages/Landing';
+import Signup from './Components/Signup/Signup';
 
 const router = createBrowserRouter([
 	{
@@ -23,7 +20,7 @@ const router = createBrowserRouter([
 			},
 			{
 				path: '/signup',
-				element: <Feautures />,
+				element: <Signup />,
 			},
 	  ],
 	},
@@ -32,13 +29,6 @@ const router = createBrowserRouter([
 function App() {
 	return (
 		<RouterProvider router={router} />
-		// <>
-		// 	<Navbar />
-		// 	<Hero />
-		// 	<Feautures />
-		// 	<Engagement />
-		// 	<Footer/>
-		// </>
 	);
 }
 

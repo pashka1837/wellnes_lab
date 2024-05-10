@@ -7,11 +7,11 @@ export default function Feautures() {
 	return (
 		<div className={`${styles.features} container_gr`} >
 
-			{/* <div className={styles.text} >
+			<div className={styles.text} >
 				<h3>
-				Discover the power of our AI manager platform to optimize your investments and capitalize on market opportunities.
+				Discover the power of our AI manager platform
 				</h3>
-			</div> */}
+			</div>
 
 			<div className={styles.cards_container}>
 				{data.map((card, i) => {

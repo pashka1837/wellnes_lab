@@ -1,6 +1,7 @@
 import data_bro_img from '../assets/images/cards/data-extraction-bro.svg';
 import perfor_over_img from '../assets/images/cards/performance-overview-bro.svg';
 import nfr_for_all_img from '../assets/images/cards/NFT-amico.svg';
+import cross_platform_img from '../assets/images/cards/cross-platform-software-amico.svg';
 
 export type CardData = {
 	imgSrc: string;
@@ -21,7 +22,7 @@ const data: CardData[] = [
 		desc: 'Our platform is designed with user experience in mind. Whether you\'re a seasoned investor or new to the crypto and NFT markets, our intuitive interface makes it easier.',
 	},
 	{
-		imgSrc: data_bro_img,
+		imgSrc: cross_platform_img,
 		desc: 'We regularly update and enhance our platform with new features and functionalities, ensuring that you have access to the latest tools and technologies.',
 	},
 ];

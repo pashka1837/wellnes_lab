@@ -1,7 +1,9 @@
 import styles from './Hero.module.css';
 import heroIMG from '../../assets/images/hero.svg';
+import {useNavigate} from 'react-router-dom';
 
 export default function Hero() {
+	const navigate = useNavigate();
 	return (
 		<div className={`${styles.hero} container_gr`} >
 			<div className={styles.inner}>
@@ -12,8 +14,13 @@ export default function Hero() {
 				<img className={styles.hero_img} src={heroIMG} alt='profile image' />
 			</div>
 			<div className={styles.btn_container}>
-				{/* <button className={`${styles.log_btn} ${styles.btn}`} type='button'>Log in</button> */}
-				<button className={`${styles.sign_btn} ${styles.btn}`} type='button'>Sign up Now</button>
+				<button
+					className={`${styles.sign_btn} ${styles.btn}`}
+					type='button'
+					onClick={() => {
+						navigate('/signup');
+					}}>
+					Get Started</button>
 			</div>
 		</div>
 	);

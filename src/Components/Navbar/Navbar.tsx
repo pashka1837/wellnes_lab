@@ -10,9 +10,7 @@ export default function Navbar() {
 	return (
 		<>
 			<div className={styles.navbar}>
-				<div className={styles.logo_container} role='button' onClick={() => {
-					location.href = '#hero';
-				}}>
+				<div className={styles.logo_container} role='button'>
 					<img className={styles.logo_img} src={logo} alt='logo' />
 					<p className={styles.logo_text}>Wellnes LAB</p>
 				</div>

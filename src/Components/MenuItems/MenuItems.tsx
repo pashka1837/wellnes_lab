@@ -1,6 +1,6 @@
 import styles from './MenuItems.module.css';
-import {twitterLogo} from '../../svgs/svgs';
 import Item from './Item';
+import {twitterLink} from '../../constants/links';
 
 export type MyLink = {
 	href: string;
@@ -22,9 +22,8 @@ const links: MyLink[] = [
 		desc: 'Sign up',
 	},
 	{
-		href: 'https://twitter.com',
+		href: twitterLink,
 		desc: 'Twitter',
-		svg: twitterLogo,
 	},
 
 ];

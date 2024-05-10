@@ -1,17 +1,10 @@
-.engagement {
+.signup {
   min-height: 100dvh;
   padding: var(--navbar-height) 7%;
+  place-items: center;
 }
-
-.engagement img {
-  width: 70vw;
-}
-.engagement .subheadline {
-  z-index: 2;
-}
-
-.subheadline span {
-  font-weight: 800;
+.inner {
+  font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
 .socials {
@@ -21,15 +14,18 @@
 }
 .social_link {
   text-decoration: none;
-  color: #023047;
+  color: #b5179e;
 }
-.social_link img {
-  width: 40px;
-  /* vertical-align: middle; */
+.social_link svg {
+  width: 20px;
+}
+
+.signup_img {
+  width: 300px;
 }
 
 @media screen and (min-width: 768px) {
-  .engagement {
+  .signup {
     grid-template-columns: 50% 80%;
     overflow: hidden;
   }
@@ -39,17 +35,27 @@
   .socials {
     justify-content: flex-start;
   }
-  .engagement img {
-    width: auto;
+  .signup_img {
+    width: 450px;
+  }
+  .social_link svg {
+    width: 24px;
   }
 
-  .social_link img {
+  /* .social_link img {
     width: 50px;
-  }
+  } */
 }
 
 @media screen and (min-width: 1200px) {
-  .engagement {
+  .signup {
     grid-template-columns: 50% 50%;
+  }
+  .signup_img {
+    width: 500px;
+  }
+
+  .social_link svg {
+    width: 30px;
   }
 }

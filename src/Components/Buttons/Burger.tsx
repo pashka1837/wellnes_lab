@@ -1,5 +1,7 @@
 import useStore from '../../feature/store';
-import {closeBurger, openBurger} from '../../svgs/svgs';
+import {
+	closeBurger, openBurger,
+} from '../../svgs/svgs';
 import styles from './Burger.module.css';
 
 export default function Burger() {
