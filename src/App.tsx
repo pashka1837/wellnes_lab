@@ -1,4 +1,3 @@
-import './App.css';
 import Hero from './Components/Hero/Hero';
 import Feautures from './Components/Feautures/Feautures';
 import {RouterProvider, createBrowserRouter} from 'react-router-dom';
