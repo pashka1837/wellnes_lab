@@ -18,14 +18,14 @@ export default function MyForm({children, handleSubmit, isDisable, navigateTo, f
 
 	return (
 		<Form className={styles.myForm} onSubmit={handleSubmit}>
-			<h3>{formName}</h3>
+			<h3 className={styles.form_name}>{formName}</h3>
 			{children}
 			<div className={styles.btn_container}>
-				<button disabled={isDisable} className={`${styles.submit_btn} btn`} type='submit'>{submitBtnName}</button>
-				<p>{ifLogedin}</p>
+				<button disabled={isDisable} className={`${styles.submit_btn}`} type='submit'>{submitBtnName}</button>
+				<p className={styles.ifLogedIn}>{ifLogedin}</p>
 				<button
 
-					className={`${styles.extra_btn} btn`}
+					className={`${styles.extra_btn}`}
 					type='button'
 					onClick={() => {
 						navigate(navigateTo);

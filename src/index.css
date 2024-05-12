@@ -17,12 +17,10 @@ html {
 }
 
 body {
-  --navbar-height: 90px;
-  --footer-height: 80px;
+  --navbar-height: 50px;
+  --footer-height: 70px;
   transition: height 0.2s linear;
-  /* background-color: #3a0ca3; */
   height: 100vh;
-  /* color: #4cc9f0; */
   color: #3a0ca3;
 }
 
@@ -32,9 +30,9 @@ body:has(.mobile_menu.open) {
 
 .container_gr {
   display: grid;
-  /* height: 100dvh; */
   transition: height 0.2s linear;
   padding: calc(var(--navbar-height) + 15px) 15% 5%;
+  height: 100dvh;
 }
 
 .container_blur {
@@ -46,14 +44,14 @@ body:has(.mobile_menu.open) {
 .btn {
   font-family: "Josefin Sans", sans-serif;
   cursor: pointer;
-  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  font-size: clamp(1rem, 2.5vw, 1.4rem);
+  /* font-size: 1rem; */
   font-weight: 600;
   text-wrap: nowrap;
   padding: 10% 14%;
   border-radius: 20px;
   border: none;
   text-align: center;
-  vertical-align: middle;
 }
 
 .btn:hover {
@@ -66,7 +64,7 @@ body:has(.mobile_menu.open) {
   }
 
   body {
-    --navbar-height: 100px;
+    --navbar-height: 70px;
   }
 
   .container_gr {

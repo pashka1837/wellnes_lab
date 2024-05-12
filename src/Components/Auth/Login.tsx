@@ -3,8 +3,12 @@ import {type InputState, type SubmitFn} from '../../types';
 import MyForm from '../Form/MyForm';
 import MyInput from '../MyInput/MyInput';
 import styles from './Auth.module.css';
+import loginIMG from '../../assets/images/login.svg';
+import useMediaQuery from '../../hooks/mediaQuery';
+import Footer from '../Footer/Footer';
 
 export default function Login() {
+	const {isTablet} = useMediaQuery();
 	const [emailInput, setEmailInput] = useState<InputState>({value: '', error: ''});
 	const [passwInput, setPasswInput] = useState({value: '', error: ''});
 
@@ -23,12 +27,19 @@ export default function Login() {
 	};
 
 	return (
-		<div className={`${styles.auth} container_gr`}>
-			<h2>Welcome back, let&apos;s earn together!</h2>
-			<MyForm handleSubmit={handleSubmit} {...props}>
-				<MyInput inputState={emailInput} setInput={setEmailInput} type='email' placeHolder='Email'/>
-				<MyInput inputState={passwInput} setInput={setPasswInput} type='password' placeHolder='Password' />
-			</MyForm>
-		</div>
+		<>
+			<div className={`${styles.auth} container_gr`}>
+				<h2>Welcome back, let&apos;s earn together!</h2>
+				<div className={styles.inner}>
+					{isTablet && <img className={styles.auth_img} src={loginIMG} alt='login page image' />}
+					<MyForm handleSubmit={handleSubmit} {...props}>
+						<MyInput inputState={emailInput} setInput={setEmailInput} type='email' placeHolder='Email'/>
+						<MyInput inputState={passwInput} setInput={setPasswInput} type='password' placeHolder='Password' />
+					</MyForm>
+				</div>
+				<Footer/>
+			</div>
+		</>
+
 	);
 }
