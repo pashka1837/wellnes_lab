@@ -4,6 +4,7 @@ import data from '../../constants/feature_page_data';
 
 export default function Feautures() {
 	return (
+
 		<div className={`${styles.features} container_gr`} >
 			<div className={styles.text} >
 				<h3>

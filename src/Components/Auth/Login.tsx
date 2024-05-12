@@ -5,7 +5,7 @@ import MyInput from '../MyInput/MyInput';
 import styles from './Auth.module.css';
 import loginIMG from '../../assets/images/login.svg';
 import useMediaQuery from '../../hooks/mediaQuery';
-import Footer from '../Footer/Footer';
+// Import Footer from '../Footer/Footer';
 
 export default function Login() {
 	const {isTablet} = useMediaQuery();
@@ -37,8 +37,8 @@ export default function Login() {
 						<MyInput inputState={passwInput} setInput={setPasswInput} type='password' placeHolder='Password' />
 					</MyForm>
 				</div>
-				<Footer/>
 			</div>
+			{/* <Footer/> */}
 		</>
 
 	);
