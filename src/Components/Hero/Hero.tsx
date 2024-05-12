@@ -15,7 +15,7 @@ export default function Hero() {
 			</div>
 			<div className={styles.btn_container}>
 				<button
-					className={`${styles.sign_btn} ${styles.btn}`}
+					className={`${styles.sign_btn} btn`}
 					type='button'
 					onClick={() => {
 						navigate('/signup');

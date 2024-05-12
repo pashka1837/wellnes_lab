@@ -17,7 +17,7 @@
   display: grid;
   gap: 20px;
   line-height: 35px;
-  font-size: clamp(1.3rem, 3vw, 2.4rem);
+  font-size: clamp(1.1rem, 3vw, 2.4rem);
 }
 
 .name {
@@ -39,34 +39,9 @@
   align-self: self-start;
 }
 
-.btn {
-  font-family: "Josefin Sans", sans-serif;
-  cursor: pointer;
-  font-size: 1rem;
-  font-weight: 600;
-  text-wrap: nowrap;
-  padding: 10% 14%;
-  border-radius: 20px;
-  border: none;
-  text-align: center;
-  vertical-align: middle;
-}
-.log_btn {
-  background-color: #4cc9f0;
-  color: #3a0ca3;
-}
-
-.log_btn:hover {
-  box-shadow: 2px 2px 15px #4cc9f0;
-}
-
 .sign_btn {
   background-color: #f72585;
   color: #3a0ca3;
-}
-
-.sign_btn:hover {
-  box-shadow: 2px 2px 15px #f72585;
 }
 
 @media screen and (min-width: 768px) {

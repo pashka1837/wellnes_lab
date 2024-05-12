@@ -1,0 +1,19 @@
+.myinput {
+  border: 1px solid #4cc9f0;
+  border-radius: 10px;
+  padding-left: 10px;
+  width: 200px;
+  height: 30px;
+  color: #3a0ca3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1rem;
+}
+
+.myinput:focus {
+  border: 2px solid #4361ee;
+  outline: none;
+}
+
+.inputError {
+  color: #f72585;
+}

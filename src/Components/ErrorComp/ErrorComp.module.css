@@ -1,9 +1,21 @@
-.signup {
+.error_el {
   height: 100dvh;
   padding: var(--navbar-height) 7%;
   place-items: center;
 }
 .inner {
+  display: grid;
+  align-content: space-evenly;
+  justify-items: start;
+}
+
+.home_btn {
+  padding: 10px 20px;
+  margin-bottom: 50px;
+  color: #b5179e;
+}
+
+.text {
   font-size: clamp(1.3rem, 3vw, 2.4rem);
 }
 
@@ -25,7 +37,7 @@
 }
 
 @media screen and (min-width: 768px) {
-  .signup {
+  .error_el {
     grid-template-columns: 50% 80%;
     overflow: hidden;
   }
@@ -48,7 +60,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .signup {
+  .error_el {
     grid-template-columns: 50% 50%;
   }
   .signup_img {

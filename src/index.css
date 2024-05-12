@@ -43,6 +43,23 @@ body:has(.mobile_menu.open) {
   border-radius: 50px;
 }
 
+.btn {
+  font-family: "Josefin Sans", sans-serif;
+  cursor: pointer;
+  font-size: clamp(0.8rem, 2.5vw, 1rem);
+  font-weight: 600;
+  text-wrap: nowrap;
+  padding: 10% 14%;
+  border-radius: 20px;
+  border: none;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  box-shadow: 2px 2px 15px #f72585;
+}
+
 @media screen and (min-width: 768px) {
   body:has(.mobile_menu.open) {
     overflow: auto;

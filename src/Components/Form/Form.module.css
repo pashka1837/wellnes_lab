@@ -1,0 +1,43 @@
+.myForm {
+  padding: 12% 8%;
+  border: 2px solid #4cc9f0;
+  border-radius: 10px;
+
+  display: grid;
+  gap: 20px;
+}
+
+.myForm:has(input:focus) {
+  border-color: #4361ee;
+}
+
+.submit_btn {
+  padding: 10px 15px;
+  color: #4cc9f0;
+  background-color: #f72585;
+}
+
+.submit_btn:disabled {
+  box-shadow: none;
+}
+
+.extra_btn {
+  padding: 10px 15px;
+  color: #4cc9f0;
+  background-color: #4361ee;
+}
+
+.extra_btn:hover {
+  box-shadow: 2px 2px 15px #4361ee;
+}
+
+.btn_container {
+  display: grid;
+  gap: 5px;
+}
+
+@media screen and (min-width: 768px) {
+  .myForm {
+    padding: 5% 8%;
+  }
+}

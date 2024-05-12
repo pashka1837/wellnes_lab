@@ -18,8 +18,8 @@ const links: MyLink[] = [
 		desc: 'Features',
 	},
 	{
-		href: '/signup',
-		desc: 'Sign up',
+		href: '/login',
+		desc: 'Account',
 	},
 	{
 		href: twitterLink,

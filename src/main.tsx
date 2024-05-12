@@ -7,22 +7,15 @@ import {
 import Landing from './Pages/Landing.tsx';
 import Hero from './Components/Hero/Hero.tsx';
 import Feautures from './Components/Feautures/Feautures.tsx';
-import Signup from './Components/Signup/Signup.tsx';
-
-// Const router = createBrowserRouter(
-// 	createRoutesFromElements(
-// 		<Route path='/' element={<Landing/>} >
-// 			<Route index={true} element={<Hero/>}/>
-// 			<Route path='features' element={<Feautures/>}/>
-// 			<Route path='signup' element={<Signup/>}/>
-// 		</Route>,
-// 	),
-// );
+import ErrorComp from './Components/ErrorComp/ErrorComp.tsx';
+import Login from './Components/Auth/Login.tsx';
+import Signup from './Components/Auth/Signup.tsx';
 
 const router = createBrowserRouter([
 	{
 		path: '/',
 		element: <Landing />,
+		errorElement: <ErrorComp />,
 		children: [
 			{
 				path: '/',
@@ -31,6 +24,10 @@ const router = createBrowserRouter([
 			{
 				path: 'features',
 				element: <Feautures />,
+			},
+			{
+				path: 'login',
+				element: <Login />,
 			},
 			{
 				path: 'signup',
@@ -42,9 +39,6 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
 	<React.StrictMode>
-		<>
-			<RouterProvider router={router} />
-		</>
-
+		<RouterProvider router={router} />
 	</React.StrictMode>,
 );
