@@ -17,7 +17,7 @@ html {
 }
 
 body {
-  --navbar-height: 50px;
+  --navbar-height: 60px;
   --footer-height: 70px;
   transition: height 0.2s linear;
   height: 100vh;
@@ -32,6 +32,9 @@ body:has(.mobile_menu.open) {
   display: grid;
   transition: height 0.2s linear;
   padding: calc(var(--navbar-height) + 15px) 15% 5%;
+  height: 100dvh;
+}
+.container_outer {
   height: 100dvh;
 }
 

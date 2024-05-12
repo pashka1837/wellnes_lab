@@ -5,7 +5,7 @@ import MyInput from '../MyInput/MyInput';
 import styles from './Auth.module.css';
 import loginIMG from '../../assets/images/login.svg';
 import useMediaQuery from '../../hooks/mediaQuery';
-// Import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 
 export default function Login() {
 	const {isTablet} = useMediaQuery();
@@ -38,7 +38,7 @@ export default function Login() {
 					</MyForm>
 				</div>
 			</div>
-			{/* <Footer/> */}
+			<Footer/>
 		</>
 
 	);

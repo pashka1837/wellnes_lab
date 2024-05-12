@@ -6,7 +6,7 @@ import styles from './Auth.module.css';
 import {useNavigate} from 'react-router-dom';
 import useMediaQuery from '../../hooks/mediaQuery';
 import signupIMG from '../../assets/images/signup.svg';
-// Import Footer from '../Footer/Footer';
+import Footer from '../Footer/Footer';
 
 export default function Signup() {
 	const {isTablet} = useMediaQuery();
@@ -54,7 +54,7 @@ export default function Signup() {
 					</MyForm>
 				</div>
 			</div>
-			{/* <Footer/> */}
+			<Footer/>
 		</>
 
 	);
