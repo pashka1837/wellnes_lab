@@ -1,7 +1,6 @@
 import {Form, useNavigate} from 'react-router-dom';
 import styles from './Form.module.css';
 import {type SubmitFn} from '../../types';
-import {type FormEvent} from 'react';
 
 type Props = {
 	children: string | JSX.Element | JSX.Element[];
@@ -16,10 +15,6 @@ type Props = {
 
 export default function MyForm({children, handleSubmit, isDisable, navigateTo, formName, submitBtnName, extraBtnName, ifLogedin}: Props) {
 	const navigate = useNavigate();
-	function handleDisabled(e: FormEvent<HTMLButtonElement>): boolean {
-		console.log(e.target);
-		return false;
-	}
 
 	return (
 		<Form className={styles.myForm} onSubmit={handleSubmit}>
