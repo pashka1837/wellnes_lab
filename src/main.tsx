@@ -10,6 +10,8 @@ import Feautures from './Components/Feautures/Feautures.tsx';
 import ErrorComp from './Components/ErrorComp/ErrorComp.tsx';
 import Login from './Components/Auth/Login.tsx';
 import Signup from './Components/Auth/Signup.tsx';
+import Tech from './Components/Tech/Tech.tsx';
+import Contacts from './Components/Contacts/Contacts.tsx';
 
 const router = createBrowserRouter([
 	{
@@ -24,6 +26,14 @@ const router = createBrowserRouter([
 			{
 				path: 'features',
 				element: <Feautures />,
+			},
+			{
+				path: 'tech',
+				element: <Tech />,
+			},
+			{
+				path: 'contacts',
+				element: <Contacts />,
 			},
 			{
 				path: 'login',

@@ -1,5 +1,6 @@
 .footer {
-  height: var(--footer-height);
+  padding: 5px 10px;
+  /* height: var(--footer-height); */
   width: 100%;
   background-color: #b5179d23;
 
@@ -8,10 +9,19 @@
   left: 0;
   right: 0;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
 
   font-size: clamp(0.5rem, 2.5vw, 0.9rem);
+}
+
+.rights {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.rights span {
+  opacity: 0;
 }
 
 .links {

@@ -1,6 +1,6 @@
 import styles from './MenuItems.module.css';
 import Item from './Item';
-import {twitterLink} from '../../constants/links';
+// Import {twitterLink} from '../../constants/links';
 
 export type MyLink = {
 	href: string;
@@ -18,13 +18,21 @@ const links: MyLink[] = [
 		desc: 'Features',
 	},
 	{
+		href: '/tech',
+		desc: 'Tech',
+	},
+	{
+		href: '/contacts',
+		desc: 'Contact',
+	},
+	{
 		href: '/login',
 		desc: 'Account',
 	},
-	{
-		href: twitterLink,
-		desc: 'Twitter',
-	},
+	// {
+	// 	href: twitterLink,
+	// 	desc: 'Twitter',
+	// },
 
 ];
 

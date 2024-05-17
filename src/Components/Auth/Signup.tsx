@@ -6,7 +6,6 @@ import styles from './Auth.module.css';
 import {useNavigate} from 'react-router-dom';
 import useMediaQuery from '../../hooks/mediaQuery';
 import signupIMG from '../../assets/images/signup.svg';
-import Footer from '../Footer/Footer';
 
 export default function Signup() {
 	const {isTablet} = useMediaQuery();
@@ -40,22 +39,18 @@ export default function Signup() {
 	};
 
 	return (
-		<>
-			<div className={`${styles.auth} container_gr`}>
-				<h2 style={{justifySelf: 'self-start'}}>Ready to join and start stacking assets?</h2>
-				<div className={styles.inner}>
-					{isTablet && <img className={styles.auth_img} src={signupIMG} alt='login page image' />}
-					<MyForm handleSubmit={handleSubmit} {...props}>
-						<MyInput inputState={emailInput} setInput={setEmailInput} type='email' placeHolder='Email'/>
-						<MyInput inputState={firstNaInput} setInput={setFirstNaInput} type='text' placeHolder='First Name'/>
-						<MyInput inputState={lastNaInput} setInput={setLastNaInput} type='text' placeHolder='Last Name'/>
-						<MyInput inputState={passwInput} setInput={setPasswInput} type='password' name='password' placeHolder='Password' />
-						<MyInput inputState={passwInput2} setInput={setPasswInput2} type='password' name='password2' placeHolder='Repeat password' />
-					</MyForm>
-				</div>
+		<div className={`${styles.auth} container_gr`}>
+			<h2 style={{justifySelf: 'self-start'}}>Ready to join and start stacking assets?</h2>
+			<div className={styles.inner}>
+				{isTablet && <img className={styles.auth_img} src={signupIMG} alt='login page image' />}
+				<MyForm handleSubmit={handleSubmit} {...props}>
+					<MyInput inputState={emailInput} setInput={setEmailInput} type='email' placeHolder='Email'/>
+					<MyInput inputState={firstNaInput} setInput={setFirstNaInput} type='text' placeHolder='First Name'/>
+					<MyInput inputState={lastNaInput} setInput={setLastNaInput} type='text' placeHolder='Last Name'/>
+					<MyInput inputState={passwInput} setInput={setPasswInput} type='password' name='password' placeHolder='Password' />
+					<MyInput inputState={passwInput2} setInput={setPasswInput2} type='password' name='password2' placeHolder='Repeat password' />
+				</MyForm>
 			</div>
-			<Footer/>
-		</>
-
+		</div>
 	);
 }
